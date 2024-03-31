@@ -1,5 +1,5 @@
 # XOR_sentence_transformer
-XOR発見を目的として，sentence_transformerを用いた文章埋め込みによるコサイン類似度による推論挙動確認<br>
+XOR発見を目的として，sentence_transformerを用いた文章埋め込みによるコサイン類似度による推論の挙動確認<br>
 
 -  ```main.ipynb``` : sentence_transformerを用いた論文テキストのランキング問題推論テスト
 
