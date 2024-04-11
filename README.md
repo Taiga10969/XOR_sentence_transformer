@@ -23,13 +23,13 @@ Dockerイメージ：[taiga10969/basic_image:cuda12.1.0-ubuntu22.04-python3.10](
 python3 feature_distribution_umap.py --[option]
 ```
 **options**
-dataset_index: モデルに推論させるデータを指定．IMDB datasetのテストデータのindexを指定．(default=3)<br>
-umap_seed: umapで次元削減する際のumapのrandom_stateを指定．(default=2)<br>
-metric: umapで次元削減する際のumapのmetricを指定．(default="euclidean")<br>
-trained_pth: 学習済みパラメータのファイルパスを指定．(default=デフォルトのままtrain.shを実行してモデルを学習した際に，最もvalid lossが低かった時のパラメータを読み込みしています．)<br>
-save_path: 特徴量の分布の可視化結果の保存先ディレクトリの指定．(default="./feature_distribution_umap")<br>
-bert_model_name: 読み込みを行うbertのモデル名．🤗Huggingface (default='bert-base-uncased')<br>
-hf_dataset_name: 読み込みを行うデータセット名．🤗Huggingface Datasets (default='stanfordnlp/imdb')<br>
+```dataset_index```: モデルに推論させるデータを指定．IMDB datasetのテストデータのindexを指定．(default=3)<br>
+```umap_seed```: umapで次元削減する際のumapのrandom_stateを指定．(default=2)<br>
+```metric```: umapで次元削減する際のumapのmetricを指定．(default="euclidean")<br>
+```trained_pth```: 学習済みパラメータのファイルパスを指定．(default=デフォルトのままtrain.shを実行してモデルを学習した際に，最もvalid lossが低かった時のパラメータを読み込みしています．)<br>
+```save_path```: 特徴量の分布の可視化結果の保存先ディレクトリの指定．(default="./feature_distribution_umap")<br>
+```bert_model_name```: 読み込みを行うbertのモデル名．🤗Huggingface (default='bert-base-uncased')<br>
+```hf_dataset_name```: 読み込みを行うデータセット名．🤗Huggingface Datasets (default='stanfordnlp/imdb')<br>
 
 作成：Taiga MASUDA <br>
 最終更新：2024.3.31 (Sun.)
