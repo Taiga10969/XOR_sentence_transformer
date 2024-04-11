@@ -6,8 +6,9 @@ XOR発見を目的として，sentence_transformerを用いた文章埋め込み
 ## 実験環境等
 データセット：[SciCap+データセット](https://huggingface.co/datasets/anselyang/SciCapPlus/tree/main)<br>
 Dockerイメージ：[taiga10969/basic_image:cuda12.1.0-ubuntu22.04-python3.10](https://hub.docker.com/layers/taiga10969/basic_image/cuda12.1.0-ubuntu22.04-python3.10/images/sha256-076a9005a1daafe2910eda4354921bd852f8611fa70d040313a4504e880f981e?context=repo)<br>
-1. ```pip install -r requirements.txt```
-2. ```main.ipynb```を実行
+```
+pip install -r requirements.txt
+```
 
 ## 特徴量分布の可視化
 あるテストデータを入力した際のBERTモデル内の各ポイントでの特徴量を取得し，UMAPで次元削減し2次元のマップとして可視化を行う．<br>
@@ -22,7 +23,7 @@ Dockerイメージ：[taiga10969/basic_image:cuda12.1.0-ubuntu22.04-python3.10](
 ```
 python3 feature_distribution_umap.py --[option]
 ```
-**options**
+**options**<br>
 ```dataset_index```: モデルに推論させるデータを指定．IMDB datasetのテストデータのindexを指定．(default=3)<br>
 ```umap_seed```: umapで次元削減する際のumapのrandom_stateを指定．(default=2)<br>
 ```metric```: umapで次元削減する際のumapのmetricを指定．(default="euclidean")<br>
