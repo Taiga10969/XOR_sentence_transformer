@@ -17,8 +17,7 @@ Dockerイメージ：[taiga10969/basic_image:cuda12.1.0-ubuntu22.04-python3.10](
 - PE後
 - Multi-Head Attentionの最後のLinear層の処理前
 - Multi-Head Attentionの最後のLinear層の処理後（MHAの出力）
-- Feed Forward Netwarkの処理後
-<br>
+- Feed Forward Netwarkの処理後<br>
 の計5ポイントで，Input EmbeddingとPE以外はTransformer Encoderの積層数分(12layer)あるため，可視化する特徴量は合計38となる．
 
 作成：Taiga MASUDA <br>
